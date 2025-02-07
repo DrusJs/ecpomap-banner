@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Actay';
+    src: url('Actay-Regular.woff2') format('woff2'),
+        url('Actay-Regular.woff') format('woff'),
+        url('Actay-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Actay';
+    src: url('ActayWide-Bold.woff2') format('woff2'),
+        url('ActayWide-Bold.woff') format('woff'),
+        url('ActayWide-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+.telegram-banner * {
+   box-sizing: border-box; 
+   margin: 0;
+   padding: 0;
+}
+
+.banner-section {
+    padding: 0 40px;
+}
+
+.telegram-banner {
+    box-sizing: border-box; 
+    width: 100%;
+    max-width: 1200px;
+    padding: 31px 22px 31px 44px;
+    background-image: url('../images/banner-bg-full.png');
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+
+.telegram-banner-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 569px;
+}
+
+.telegram-banner-title {
+    font-family: 'Actay';
+    font-size: 35px;
+    line-height: 39px;    
+    font-weight: 700;  
+    color: #FFFFFF;  
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+.telegram-banner-desc {
+    font-family: 'Actay';
+    font-size: 30px;
+    line-height: 39px;    
+    font-weight: 400;  
+    color: #FFFFFF;  
+}
+
+.telegram-banner-images {
+    position: relative;
+}
+
+.telegram-banner-images img {
+    position: absolute;
+}
+.phone-absolute {
+    left: -200px;
+    top: -30px;
+}
+.telegram-logo-absolute {
+    top: 30px;
+    left: 250px;
+}
+
+.telegram-banner-right {
+    display: flex;
+    align-self: flex-end;
+}
+
+.telegram-banner-link {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 70px;
+    padding: 10px 22px;
+    font-family: 'Actay';
+    font-size: 18px;  
+    font-weight: 700; 
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+.telegram-banner-subtext {
+    font-family: 'Actay';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    max-width: 251px;
+    min-width: 231px;
+    width: 100%;
+}
+
+.telegram-banner-subtext .telegram-banner-count {
+    font-family: 'Actay';
+    font-size: 50px;
+    line-height: 40px;    
+    font-weight: 700;
+}
+@media (max-width: 1200px) {
+    .telegram-banner  {
+        padding: 23px;
+    }
+    .telegram-banner-title {
+        font-size: 30px;
+        line-height: 39px;    
+        margin-bottom: 30px;
+    }
+    .telegram-banner-desc {
+        font-size: 20px;
+        line-height: 29px;    
+    }
+    .telegram-banner-left {
+        max-width: 440px;
+    }
+
+    .telegram-banner-link {
+        margin-top: 30px;
+        height: 60px;
+        font-size: 16px;  
+    }
+    
+    .telegram-banner-subtext {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 251px;
+        min-width: 231px;
+    }
+
+    .telegram-banner-subtext .telegram-banner-count {
+        font-size: 50px;
+        line-height: 40px;   
+    }
+    .phone-absolute {
+        max-height: 310px;
+        width: auto;
+        left: -140px;
+    }
+    .telegram-logo-absolute {
+        width: 110px;
+        height: auto;
+    }
+}
+@media (max-width: 967px) {
+    .telegram-banner-title {
+        font-size: 25px;
+        line-height: 34px;    
+        margin-bottom: 40px;
+    }
+    .telegram-banner-desc {
+        font-size: 18px;
+        line-height: 26px;    
+    }
+    .telegram-banner-left {
+        max-width: 300px;
+    }
+
+    .telegram-banner-link {
+        margin-top: 20px;
+        height: 60px;
+        font-size: 14px;  
+    }
+    
+    .telegram-banner-subtext {
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 251px;
+        min-width: 231px;
+    }
+
+    .telegram-banner-subtext .telegram-banner-count {
+        font-size: 35px;
+        line-height: 40px;   
+    }
+
+    .phone-absolute {
+        max-height: 290px;
+        width: auto;
+        left: -110px;
+        top: 0;
+    }
+    .telegram-logo-absolute {
+        width: 100px;
+        top: 80px;
+        left: 160px;
+    }
+}
+
+@media (max-width: 748px) {
+    .banner-section {
+        padding: 0 15px;
+    }
+
+    .telegram-banner {
+        background-image: url('../images/banner-ellipse-mob.svg'),linear-gradient(90deg, #8250DF 29%, #512A97 100%);
+        background-position: bottom right;
+        background-size: 400px, 100%;
+        flex-direction: column;
+    }
+
+    .telegram-banner-title {
+        font-size: 21px;
+        line-height: 29px;    
+        margin-bottom: 24px;
+    }
+    .telegram-banner-desc {
+        font-size: 18px;
+        line-height: 27px;    
+    }
+    .telegram-banner-left {
+        max-width: 400px;
+    }
+
+    .telegram-banner-link {
+        margin-top: 20px;
+        height: 60px;
+        font-size: 14px;  
+    }
+    
+    .telegram-banner-subtext {
+        font-size: 18px;
+        line-height: 24px;
+        max-width: 220px;
+        min-width: 210px;
+    }
+
+    .telegram-banner-subtext .telegram-banner-count {
+        font-size: 35px;
+        line-height: 40px;   
+    }
+
+    .telegram-banner-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .telegram-banner-images img {
+        position: static;
+    }
+    .phone-absolute {
+        max-height: 241px;
+        width: auto;
+    }
+    .telegram-logo-absolute {
+        width: 90px;
+        height: auto;
+    }
+}
+
+@media (max-width: 640px)  {
+    .phone-absolute {
+        max-height: 200px;
+        width: auto;
+    }
+    .telegram-logo-absolute {
+        width: 70px;
+        height: auto;
+    }
+}
